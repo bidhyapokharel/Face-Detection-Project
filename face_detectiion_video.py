@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default')
+eye_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default')
+
 cap = cv2.VideoCapture('test.mp4')
 
 while cap.isOpened():
